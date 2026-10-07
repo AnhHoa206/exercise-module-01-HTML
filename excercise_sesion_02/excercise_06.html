@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web bán hàng</title>
+</head>
+<body>
+ <h1>Trang web bán hàng</h1>   
+ <ul>
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="products.html">Sản phẩm</a></li>
+    <li><a href="about.html">Giới thiệu</a></li>
+    <li><a href="contact.html">Liên hệ</a></li>
+ </ul>
+<h2>Thông tin sản phẩm</h2>
+<table border="1" cellspacing="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>tên sản phẩm</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sản phẩm 1</td>
+            <td>mô tả sản phẩm 1</td>
+            <td>100.000đ</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Sản phẩm 2</td>
+            <td>mô tả sản phẩm 2</td>
+            <td>100.000đ</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Sản phẩm 3</td>
+            <td>mô tả sản phẩm 3</td>
+            <td>300.000đ</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+    <h2>Thông tin người dùng</h2>
+    <form action="submit_form.php" method="post">
+        <label for="Họ và tên">Tên:</label>
+        <input placeholder="Nguyễn văn A" type="text" id="Họ và tên" name="Họ và tên" required><br><br>
+        <label for="email">Email:</label>
+        <input placeholder="nguyenvana@example.com" type="email" id="email" name="email" required><br><br>
+        <label for="số điện thoại">Số điện thoại:</label>
+        <input placeholder="0123456789" type="tel" id="số điện thoại" name="số điện thoại" pattern="[0-9]{10}" required><br><br>
+        <label for="địa chỉ">Địa chỉ:</label>
+        <input placeholder="123 Đường ABC, Quận XYZ" type="text" id="địa chỉ" name="địa chỉ" required><br><br>
+        <label for="giới tính">Giới tính:</label>
+        <input type="radio" id="Nam" name="giới tính" value="Nam" required>
+        <label for="Nam">Nam</label>
+        <input type="radio" id="Nữ" name="giới tính" value="Nữ" required>
+        <label for="Nữ">Nữ</label><br><br>
+        <input type="submit" value="Đặt hàng">
+</body>
+</html>
